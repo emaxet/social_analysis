@@ -107,7 +107,6 @@ function mostFollowersOver30(users) {
     });
     userFollowers[users[profile].name] = {followers: followers.length, age: users[profile].age};
   }
-  console.log(userFollowers);
   for (var username in userFollowers) {
     if (!mostFollowers && userFollowers[username].age > 30) {
       mostFollowers = userFollowers[username].followers;
